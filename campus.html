@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | kalyan ram</title>
+    <link rel="stylesheet" href="campus.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="brand"><h1 id="main-logo">CAMPUS<br>CONNECT</h1></div>
+        </div>
+
+        <div class="glass-panel" id="auth-section">
+            <h2 id="auth-title">Welcome Back</h2>
+            <p id="auth-subtitle">Login to access your campus dashboard</p>
+            <div class="input-group"><input type="text" id="user-id" placeholder="University ID / Email"></div>
+            <div class="input-group"><input type="password" id="password" placeholder="Password"></div>
+            <button class="auth-btn" id="main-btn">Log In</button>
+            <p class="toggle-text">
+                <span id="toggle-msg">New student?</span> 
+                <a id="auth-toggle">Create Account</a>
+            </p>
+        </div>
+
+        <div id="dashboard-content" style="display: none;">
+            <div class="welcome-banner">
+                <h2 id="user-greeting">Hello!</h2>
+                <p>Stay updated with the latest events.</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="🔍 Search updates (e.g. AI, Holiday)...">
+            </div>
+
+            <div id="admin-panel" class="glass-panel admin-box" style="display: none;">
+                <h3>Broadcast News</h3>
+                <div class="input-group"><input type="text" id="news-input" placeholder="Event Title..."></div>
+                <div class="input-group">
+                    <select id="news-category">
+                        <option value="seminar-label">🎓 Seminar</option>
+                        <option value="exam-label">📝 Exam</option>
+                        <option value="fest-label">🎸 Cultural</option>
+                        <option value="notice-label">📢 Official</option>
+                    </select>
+                </div>
+                <button class="auth-btn" id="post-news-btn">Post Update</button>
+            </div>
+
+            <div class="info-grid" id="news-grid"></div>
+            <div class="logout-link" onclick="location.reload()">Secure Logout</div>
+        </div>
+    </div>
+
+    <script src="campus.js"></script>
+</body>
+</html>

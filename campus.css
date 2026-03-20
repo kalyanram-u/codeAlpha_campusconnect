@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
+    background-attachment: fixed;
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px; 
+    color: #fff;
+}
+
+.main-wrapper { 
+    width: 100%; 
+    max-width: 700px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px; 
+}
+
+.brand h1 { 
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    text-align: center; 
+    letter-spacing: 10px; 
+    line-height: 1.1; 
+    color: #d8f3dc; 
+    text-transform: uppercase;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 50px; 
+    padding: 70px 60px; 
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#auth-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 50px; 
+    opacity: 0.7;
+}
+
+.input-group { margin-bottom: 30px; }
+
+input, select {
+    width: 100%; 
+    padding: 24px; 
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 25px; 
+    color: white;
+    font-size: 1.2rem; 
+}
+
+.auth-btn {
+    width: 100%; 
+    padding: 24px; 
+    background: #d8f3dc; 
+    color: #1b4332;
+    border: none; 
+    border-radius: 25px; 
+    font-weight: 800; 
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    cursor: pointer; 
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.info-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    margin-top: 50px; 
+}
+
+.block {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px; 
+    border-radius: 40px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative; 
+}
+
+.block .icon { 
+    font-size: 3rem; 
+    margin-bottom: 25px; 
+}
+
+.block h3 { 
+    font-size: 1rem; 
+    font-weight: 800; 
+    letter-spacing: 3px; 
+    margin-bottom: 20px; 
+    display: block;
+}
+
+.block p { 
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    line-height: 1.6; 
+}
+
+.seminar-label { border-top: 10px solid #a29bfe; }
+.seminar-label h3 { color: #a29bfe; }
+.exam-label { border-top: 10px solid #ff7675; }
+.exam-label h3 { color: #ff7675; }
+.fest-label { border-top: 10px solid #55efc4; }
+.fest-label h3 { color: #55efc4; }
+.notice-label { border-top: 10px solid #74b9ff; }
+.notice-label h3 { color: #74b9ff; }
+
+.del-btn {
+    position: absolute; top: 20px; right: 20px; background: #ff7675;
+    color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;
+}
+
+.logout-link { text-align: center; margin-top: 60px; color: #ff7675; cursor: pointer; font-size: 1.2rem; }
